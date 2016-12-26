@@ -1,2 +1,13 @@
 # -
 封装点击下拉显示tableView功能
+
+功能说明：
+能够弹出一个下拉的tableView，默认位置在添加点击的控件的中间下面的地方。
+按钮1为tableView自带的cell
+按钮2为自定义tableViewCell
+
+使用说明：
+使用的时候需要将除Viewcontroller以外的文件拷贝。
+注意设置的数据类型为字典数组，字典的key参考注释，目前仅仅设置了三个属性，如果需要在自定义Cell哪里添加控件，那么需要修改LXHNoTwoBtnVcCell里面的setItem方法和LXHNoTwoBtnVcCellItem里面的属性和方法。
+可以在LXHUIPresentationController的containerViewWillLayoutSubviews设置背景遮盖
+
