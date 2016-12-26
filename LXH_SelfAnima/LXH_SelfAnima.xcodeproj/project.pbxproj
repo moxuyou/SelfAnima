@@ -22,6 +22,7 @@
 		030603281D1254CE00507F04 /* LXHNoTwoBtnVcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 030603261D1254CE00507F04 /* LXHNoTwoBtnVcCell.m */; };
 		030603291D1254CE00507F04 /* LXHNoTwoBtnVcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030603271D1254CE00507F04 /* LXHNoTwoBtnVcCell.xib */; };
 		0306032C1D1254F900507F04 /* LXHNoTwoBtnVcCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306032B1D1254F900507F04 /* LXHNoTwoBtnVcCellItem.m */; };
+		5A9B2FCBBC5C8ADFDF1142E9 /* libPods-LXH_SelfAnima.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ADD16ABC452EFA29D39FF6 /* libPods-LXH_SelfAnima.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,9 @@
 		030603271D1254CE00507F04 /* LXHNoTwoBtnVcCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXHNoTwoBtnVcCell.xib; sourceTree = "<group>"; };
 		0306032A1D1254F900507F04 /* LXHNoTwoBtnVcCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHNoTwoBtnVcCellItem.h; sourceTree = "<group>"; };
 		0306032B1D1254F900507F04 /* LXHNoTwoBtnVcCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHNoTwoBtnVcCellItem.m; sourceTree = "<group>"; };
+		25174C80B2270E0C195BF752 /* Pods-LXH_SelfAnima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXH_SelfAnima.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXH_SelfAnima/Pods-LXH_SelfAnima.release.xcconfig"; sourceTree = "<group>"; };
+		25ADD16ABC452EFA29D39FF6 /* libPods-LXH_SelfAnima.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LXH_SelfAnima.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A4E70643185940C23FCFDA /* Pods-LXH_SelfAnima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXH_SelfAnima.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXH_SelfAnima/Pods-LXH_SelfAnima.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9B2FCBBC5C8ADFDF1142E9 /* libPods-LXH_SelfAnima.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,8 @@
 			children = (
 				030602F71D1213D600507F04 /* LXH_SelfAnima */,
 				030602F61D1213D600507F04 /* Products */,
+				D24DF38E7988A11E2A14AC7A /* Pods */,
+				BD74C79CA9548FCCCE3D3024 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +141,23 @@
 			name = NoTwoBtn;
 			sourceTree = "<group>";
 		};
+		BD74C79CA9548FCCCE3D3024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25ADD16ABC452EFA29D39FF6 /* libPods-LXH_SelfAnima.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D24DF38E7988A11E2A14AC7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6A4E70643185940C23FCFDA /* Pods-LXH_SelfAnima.debug.xcconfig */,
+				25174C80B2270E0C195BF752 /* Pods-LXH_SelfAnima.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0306030C1D1213D600507F04 /* Build configuration list for PBXNativeTarget "LXH_SelfAnima" */;
 			buildPhases = (
+				B779DA6807A78E6C247AE112 /* [CP] Check Pods Manifest.lock */,
 				030602F11D1213D600507F04 /* Sources */,
 				030602F21D1213D600507F04 /* Frameworks */,
 				030602F31D1213D600507F04 /* Resources */,
+				638B8B530CBD85FE7CE346AB /* [CP] Embed Pods Frameworks */,
+				5A21AD80372708DBE43E4A7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +229,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A21AD80372708DBE43E4A7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXH_SelfAnima/Pods-LXH_SelfAnima-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		638B8B530CBD85FE7CE346AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXH_SelfAnima/Pods-LXH_SelfAnima-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B779DA6807A78E6C247AE112 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		030602F11D1213D600507F04 /* Sources */ = {
@@ -326,6 +401,7 @@
 		};
 		0306030D1D1213D600507F04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A4E70643185940C23FCFDA /* Pods-LXH_SelfAnima.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXH_SelfAnima/Info.plist;
@@ -338,6 +414,7 @@
 		};
 		0306030E1D1213D600507F04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25174C80B2270E0C195BF752 /* Pods-LXH_SelfAnima.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXH_SelfAnima/Info.plist;
